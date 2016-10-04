@@ -1,15 +1,11 @@
 package com.jeannot.adsb.processor;
 
-import java.util.List;
-
 import org.junit.Test;
 
-import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.sun.jersey.api.client.Client;
 import com.sun.jersey.api.client.ClientResponse;
 import com.sun.jersey.api.client.WebResource;
-import com.sun.jersey.api.client.config.ClientConfig;
 
 /**
  * Try out the JSON API: http://www.adsbexchange.com/data
@@ -29,8 +25,8 @@ public class AdsbJsonApiTest {
 		
 		//Sometimes you need a proxy, depends where you are...
 	    //System.setProperty("java.net.useSystemProxies", "true");
-		System.setProperty("http.proxyHost", "proxy.logica.com");
-	    System.setProperty("http.proxyPort", "80");	  	    
+		//System.setProperty("http.proxyHost", "proxy.logica.com");
+	    //System.setProperty("http.proxyPort", "80");	  	    
 		
 	    Client client = Client.create();
 
