@@ -9,8 +9,20 @@ import java.net.Proxy;
 import java.net.Socket;
 import java.net.SocketAddress;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
+/**
+ * This is some trying out of stuff related to getting the data feed from
+ * http://www.adsbexchange.com/data
+ * However, didn't get very far yet, even though that would be a nice example of reacting
+ * to things happening in real time...
+ * The "Querying Live Position Data" JSON API can give you a snapshot of what planes are in the air
+ * (within a given distance of a lat/long etc.)
+ * See AdsbJsonApiTest.java for initial tryout...
+ *
+ */
+@Ignore //Don't run these tests every build, they're just for trying things out... 
 public class TrialAdsbFeedConnectionTest {
 	
 
@@ -109,5 +121,3 @@ public class TrialAdsbFeedConnectionTest {
 	}
 
 }
-
-
