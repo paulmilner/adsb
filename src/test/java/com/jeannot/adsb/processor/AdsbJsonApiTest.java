@@ -40,6 +40,8 @@ public class AdsbJsonApiTest {
 		//Do something with the JSON we get back...
 		String json = response.getEntity(String.class);
 		ObjectMapper om = new ObjectMapper();
+
+		//TODO get the result into an array of FlightTrackingInfo objects...
 		
 
 		if (response.getStatus() != 200) {
