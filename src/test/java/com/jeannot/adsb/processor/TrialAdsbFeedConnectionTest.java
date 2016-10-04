@@ -11,7 +11,7 @@ import java.net.SocketAddress;
 
 import org.junit.Test;
 
-public class TrialAdsbFeedConnection {
+public class TrialAdsbFeedConnectionTest {
 	
 
 	/**
